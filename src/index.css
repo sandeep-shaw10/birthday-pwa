@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Inter, sans-serif;
+}
+
+/* Floating Hearts */
+
+.heart {
+  position: absolute;
+  bottom: -50px;
+  animation: floatHeart linear infinite;
+  user-select: none;
+}
+
+@keyframes floatHeart {
+  0% {
+      transform: translateY(0) rotate(0deg);
+  }
+
+  25% {
+      transform: translateX(-25px) translateY(-25vh) rotate(10deg);
+  }
+
+  50% {
+      transform: translateX(25px) translateY(-50vh) rotate(-10deg);
+  }
+
+  75% {
+      transform: translateX(-20px) translateY(-75vh) rotate(10deg);
+  }
+
+  100% {
+      transform: translateY(-120vh) rotate(360deg);
+  }
+}
+
+@keyframes cardFloat {
+  0% {
+      transform: translateY(0px);
+  }
+
+  50% {
+      transform: translateY(-8px);
+  }
+
+  100% {
+      transform: translateY(0px);
+  }
+}
+
+.animate-card {
+  animation: cardFloat 6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+      transform: translateX(-150%);
+  }
+
+  100% {
+      transform: translateX(250%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
+}
