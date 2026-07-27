@@ -3,8 +3,10 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { VitePWA } from "vite-plugin-pwa";
 
+const base = "/birthday-pwa/";
+
 export default defineConfig({
-    base: "/birthday-pwa/",
+    base,
     plugins: [
         react(),
         tailwindcss(),
@@ -31,7 +33,9 @@ export default defineConfig({
       
               display: "standalone",
               orientation: "portrait",
-              start_url: "/",
+              
+              start_url: base,
+              scope: base,
       
               icons: [
                   {
@@ -48,7 +52,7 @@ export default defineConfig({
                       src: "android-chrome-512x512.png",
                       sizes: "512x512",
                       type: "image/png",
-                      purpose: "maskable any",
+                      purpose: "any",
                   },
               ],
           },
