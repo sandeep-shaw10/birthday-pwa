@@ -7,19 +7,24 @@ import HeartBurst from "./components/HeartBurst";
 import Sparkles from "./components/Sparkles";
 import { themes } from "./utils/theme";
 import { getBirthdayState } from "./utils/birthdayUtils";
+import dataJson from "./data/data.json";
+import image from "./assets/img.webp";
+import music from "./assets/music.mp3";
 
 function App() {
-    const [data, setData] = useState(null);
+
+    const data = {
+        ...dataJson,
+        image,
+        music,
+    };
+    
     const audioRef = useRef(null);
     const [showWish, setShowWish] = useState(false);
     const theme = themes[data?.theme] || themes.purple;
     const { isBirthday } = data ? getBirthdayState(data) : { isBirthday: false };
 
-    useEffect(() => {
-        fetch("/data.json")
-            .then((res) => res.json())
-            .then(setData);
-    }, []);
+
 
     useEffect(() => {
         if (!theme) return;
