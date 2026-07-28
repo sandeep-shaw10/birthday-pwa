@@ -261,7 +261,7 @@ function App() {
 
                         <Countdown data={data} />
 
-                        <div className="justify-self-center">
+                        <div className={isBirthday ? "" : "justify-self-center"}>
                             <button 
                                 onClick={isBirthday ? openWish : undefined}
                                 disabled={!isBirthday}
