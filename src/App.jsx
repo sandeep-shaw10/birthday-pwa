@@ -10,6 +10,7 @@ import { getBirthdayState } from "./utils/birthdayUtils";
 import dataJson from "./data/data.json";
 import image from "./assets/img.webp";
 import music from "./assets/music.mp3";
+import { FaGithub } from "react-icons/fa";
 
 function App() {
 
@@ -241,7 +242,7 @@ function App() {
                     />
 
                         <div>
-                            <h1 className="pb-2 text-3xl md:text-4xl xl:text-5xl font-extrabold bg-gradient-to-r bg-clip-text" >
+                            <h1 className="pb-2 text-4xl md:text-4xl xl:text-5xl font-extrabold bg-gradient-to-r bg-clip-text" >
                                 {isBirthday ? "Happy Birthday 🤍" : "Compiling... ✨"}
                             </h1>
                             
@@ -399,17 +400,25 @@ function App() {
         <footer
             className="
                 h-14
-
                 flex
                 items-center
                 justify-center
-
+                gap-2
                 mt-4
-
                 text-sm
             "
         >
-            Made with ❤️ by {data.author}
+            <span>Made with ❤️ by</span>
+
+            <a
+                href="https://github.com/sandeep-shaw10/birthday-pwa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 font-semibold hover:text-purple-300 transition"
+            >
+                <FaGithub />
+                {data.author}
+            </a>
         </footer>
 
       </div>
