@@ -21,6 +21,35 @@ export default defineConfig({
               "apple-touch-icon.png",
               "og.png",
           ],
+
+          workbox: {
+            runtimeCaching: [
+                {
+                    urlPattern: ({ request }) =>
+                        request.destination === "image",
+                    handler: "CacheFirst",
+                    options: {
+                        cacheName: "birthday-images",
+                        expiration: {
+                            maxEntries: 20,
+                            maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+                        },
+                    },
+                },
+                {
+                    urlPattern: ({ request }) =>
+                        request.destination === "audio",
+                    handler: "CacheFirst",
+                    options: {
+                        cacheName: "birthday-audio",
+                        expiration: {
+                            maxEntries: 5,
+                            maxAgeSeconds: 60 * 60 * 24 * 365,
+                        },
+                    },
+                },
+            ],
+        },
       
           manifest: {
               name: "Shweta",

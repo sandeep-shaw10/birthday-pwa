@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import confetti from "canvas-confetti";
 import HeartBackground from "./components/HeartBackground";
 import Countdown from "./components/Countdown";
@@ -13,11 +13,14 @@ import music from "./assets/music.mp3";
 
 function App() {
 
-    const data = {
-        ...dataJson,
-        image,
-        music,
-    };
+    const data = useMemo(
+        () => ({
+            ...dataJson,
+            image,
+            music,
+        }),
+        []
+    );
     
     const audioRef = useRef(null);
     const [showWish, setShowWish] = useState(false);
@@ -38,16 +41,14 @@ function App() {
     }, [theme]);
 
     useEffect(() => {
-        if (!data) return;
-    
-        audioRef.current = new Audio(data.music);
+        audioRef.current = new Audio(music);
         audioRef.current.loop = true;
         audioRef.current.volume = 0.4;
     
         return () => {
             audioRef.current?.pause();
         };
-    }, [data]);
+    }, []);
 
     const openWish = () => {
         if (!isBirthday) return;
@@ -214,7 +215,7 @@ function App() {
                         style={{
                             background: "var(--card)",
                             }} 
-                        className="relative animate-card w-full max-w-xl rounded-3xl border border-white/10 backdrop-blur-xl shadow-2xl p-8 md:p-10 transition-all duration-500">
+                        className="grid justify-center relative animate-card w-full max-w-xl rounded-3xl border border-white/10 backdrop-blur-xl shadow-2xl p-8 md:p-10 transition-all duration-500">
                         
                     <div
                         className="
@@ -239,13 +240,16 @@ function App() {
                         }}
                     />
 
-                        <h1 className="pb-2 text-4xl md:text-5xl xl:text-6xl font-extrabold bg-gradient-to-r bg-clip-text" >
-                            {isBirthday ? "Happy Birthday 🤍" : "Compiling... ✨"}
-                        </h1>
+                        <div>
+                            <h1 className="pb-2 text-3xl md:text-4xl xl:text-5xl font-extrabold bg-gradient-to-r bg-clip-text" >
+                                {isBirthday ? "Happy Birthday 🤍" : "Compiling... ✨"}
+                            </h1>
+                            
 
-                        <h2 className="mt-4 text-3xl md:text-4xl font-bold text-white ">
-                            {data.name}
-                        </h2>
+                            <h2 className="mt-4 text-3xl md:text-4xl font-bold text-white ">
+                                {data.name}
+                            </h2>
+                        </div>
 
                         <p className=" mt-2" style={{
                             color: "var(--accent)",
@@ -257,93 +261,95 @@ function App() {
 
                         <Countdown data={data} />
 
-                        <button
-                            onClick={isBirthday ? openWish : undefined}
-                            disabled={!isBirthday}
-                            className="
-                                group
-                                relative
+                        <div className="justify-self-center">
+                            <button 
+                                onClick={isBirthday ? openWish : undefined}
+                                disabled={!isBirthday}
+                                className="
+                                    group
+                                    relative
 
-                                mt-8
+                                    mt-8
 
-                                overflow-hidden
+                                    overflow-hidden
 
-                                rounded-2xl
+                                    rounded-2xl
 
-                                px-8
-                                py-4
+                                    px-8
+                                    py-4
 
-                                font-semibold
-                                text-lg
+                                    font-semibold
+                                    text-lg
 
-                                shadow-xl
+                                    shadow-xl
 
-                                transition-all
-                                duration-300
+                                    transition-all
+                                    duration-300
 
-                                hover:scale-105
-                                hover:shadow-xl
+                                    hover:scale-105
+                                    hover:shadow-xl
 
-                                active:scale-95
+                                    active:scale-95
 
-                                disabled:cursor-not-allowed
-                                disabled:opacity-60
-                                disabled:hover:scale-100
-                            "
+                                    disabled:cursor-not-allowed
+                                    disabled:opacity-60
+                                    disabled:hover:scale-100
+                                "
 
-                            style={{
-                                background: "linear-gradient(90deg,var(--primary),var(--secondary))",
-                                boxShadow: "0 8px 24px var(--glow)",
-                            }}
-                        >
+                                style={{
+                                    background: "linear-gradient(90deg,var(--primary),var(--secondary))",
+                                    boxShadow: "0 8px 24px var(--glow)",
+                                }}
+                            >
 
-    {/* Hover Glow */}
-    <div
-        className="
-            absolute
-            inset-0
-            rounded-2xl
-            blur-xl
-            opacity-0
-            group-hover:opacity-100
-            transition
-        "
+        {/* Hover Glow */}
+        <div
+            className="
+                absolute
+                inset-0
+                rounded-2xl
+                blur-xl
+                opacity-0
+                group-hover:opacity-100
+                transition
+            "
 
-        style={{
-            background: "var(--glow)",
-        }}
-    />
+            style={{
+                background: "var(--glow)",
+            }}
+        />
 
-    {/* Shimmer */}
-    <span
-        className="
-            absolute
-            inset-y-0
-            left-0
+        {/* Shimmer */}
+        <span
+            className="
+                absolute
+                inset-y-0
+                left-0
 
-            w-16
+                w-16
 
-            bg-white/30
+                bg-white/30
 
-            blur-md
+                blur-md
 
-            skew-x-[-20deg]
+                skew-x-[-20deg]
 
-            animate-shimmer
-        "
-    />
+                animate-shimmer
+            "
+        />
 
-    {/* Text */}
-    <span className="relative z-10 flex items-center justify-center gap-2">
-        <span className="text-2xl animate-bounce">{isBirthday ? "🎁" : "🔒"}</span>
-        <span>
-            {isBirthday
-                ? "Open Birthday Wish"
-                : "Available on Birthday Month"}
+        {/* Text */}
+        <span className="relative z-10 flex items-center justify-center gap-2">
+            <span className="text-2xl animate-bounce">{isBirthday ? "🎁" : "🔒"}</span>
+            <span>
+                {isBirthday
+                    ? "Open Birthday Wish"
+                    : "Available on Birthday Month"}
+            </span>
         </span>
-    </span>
 
-</button>
+                            </button>
+                        </div>
 
                     </div>
                 </div>
