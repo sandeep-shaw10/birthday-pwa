@@ -95,30 +95,30 @@ Error generating stack: `+e.message+`
                                     font-bold\r
                                     mb-6\r
                                     bg-clip-text\r
-                                `,children:n.name}),(0,T.jsx)(wu,{text:n.wish,speed:35}),(0,T.jsxs)(`p`,{className:`mt-10`,style:{color:`var(--accent)`},children:[`— `,n.author]})]})})]})})}function Eu({show:e}){return(0,T.jsx)(Fc,{children:e&&[...Array(12)].map((e,t)=>(0,T.jsx)(Cu.div,{className:`absolute left-1/2 top-1/2 text-2xl pointer-events-none`,initial:{x:0,y:0,opacity:1,scale:.5},animate:{x:(Math.random()-.5)*300,y:(Math.random()-.5)*300,opacity:0,scale:1.4},exit:{opacity:0},transition:{duration:1.4},children:`❤️`},t))})}function Du(){return(0,T.jsx)(T.Fragment,{children:(0,b.useMemo)(()=>Array.from({length:20},(e,t)=>({id:t,left:Math.random()*100,top:Math.random()*100,size:4+Math.random()*6,duration:2+Math.random()*3,delay:Math.random()*3})),[]).map(e=>(0,T.jsx)(Cu.div,{className:`absolute rounded-full`,style:{left:`${e.left}%`,top:`${e.top}%`,width:e.size,height:e.size,background:`var(--accent)`,boxShadow:`0 0 10px var(--accent)`},animate:{opacity:[.2,1,.2],scale:[1,1.8,1],y:[0,-15,0]},transition:{duration:e.duration,delay:e.delay,repeat:1/0}},e.id))})}var Ou={emerald:{bgStart:`#052e16`,bgMiddle:`#14532d`,bgEnd:`#047857`,primary:`#22c55e`,secondary:`#10b981`,accent:`#86efac`,glow:`rgba(34,197,94,0.25)`,card:`rgba(255,255,255,0.08)`,text:`#ffffff`},rose:{bgStart:`#4c0519`,bgMiddle:`#881337`,bgEnd:`#be123c`,primary:`#f43f5e`,secondary:`#fb7185`,accent:`#fecdd3`,glow:`rgba(244,63,94,0.25)`,card:`rgba(255,255,255,0.08)`,text:`#ffffff`},purple:{bgStart:`#2e1065`,bgMiddle:`#5b21b6`,bgEnd:`#7c3aed`,primary:`#8b5cf6`,secondary:`#a855f7`,accent:`#ddd6fe`,glow:`rgba(139,92,246,0.25)`,card:`rgba(255,255,255,0.08)`,text:`#ffffff`},blue:{bgStart:`#082f49`,bgMiddle:`#0369a1`,bgEnd:`#0284c7`,primary:`#0ea5e9`,secondary:`#38bdf8`,accent:`#bae6fd`,glow:`rgba(14,165,233,0.25)`,card:`rgba(255,255,255,0.08)`,text:`#ffffff`},sunset:{bgStart:`#431407`,bgMiddle:`#c2410c`,bgEnd:`#ea580c`,primary:`#fb923c`,secondary:`#f97316`,accent:`#fed7aa`,glow:`rgba(249,115,22,0.25)`,card:`rgba(255,255,255,0.08)`,text:`#ffffff`}},ku={name:`Shweta`,author:`Sandeep`,theme:`purple`,dob:`1996-08-02`,wishStart:{day:2,month:8},wishEnd:{day:31,month:8},wish:`Happy Birthday, Didi! ❤️ 
+                                `,children:n.name}),(0,T.jsx)(wu,{text:n.wish,speed:35}),(0,T.jsxs)(`p`,{className:`mt-10`,style:{color:`var(--accent)`},children:[`— `,n.author]})]})})]})})}function Eu({show:e}){return(0,T.jsx)(Fc,{children:e&&[...Array(12)].map((e,t)=>(0,T.jsx)(Cu.div,{className:`absolute left-1/2 top-1/2 text-2xl pointer-events-none`,initial:{x:0,y:0,opacity:1,scale:.5},animate:{x:(Math.random()-.5)*300,y:(Math.random()-.5)*300,opacity:0,scale:1.4},exit:{opacity:0},transition:{duration:1.4},children:`❤️`},t))})}function Du(){return(0,T.jsx)(T.Fragment,{children:(0,b.useMemo)(()=>Array.from({length:20},(e,t)=>({id:t,left:Math.random()*100,top:Math.random()*100,size:4+Math.random()*6,duration:2+Math.random()*3,delay:Math.random()*3})),[]).map(e=>(0,T.jsx)(Cu.div,{className:`absolute rounded-full`,style:{left:`${e.left}%`,top:`${e.top}%`,width:e.size,height:e.size,background:`var(--accent)`,boxShadow:`0 0 10px var(--accent)`},animate:{opacity:[.2,1,.2],scale:[1,1.8,1],y:[0,-15,0]},transition:{duration:e.duration,delay:e.delay,repeat:1/0}},e.id))})}var Ou={emerald:{bgStart:`#052e16`,bgMiddle:`#14532d`,bgEnd:`#047857`,primary:`#22c55e`,secondary:`#10b981`,accent:`#86efac`,glow:`rgba(34,197,94,0.25)`,card:`rgba(255,255,255,0.08)`,text:`#ffffff`},rose:{bgStart:`#4c0519`,bgMiddle:`#881337`,bgEnd:`#be123c`,primary:`#f43f5e`,secondary:`#fb7185`,accent:`#fecdd3`,glow:`rgba(244,63,94,0.25)`,card:`rgba(255,255,255,0.08)`,text:`#ffffff`},purple:{bgStart:`#2e1065`,bgMiddle:`#5b21b6`,bgEnd:`#7c3aed`,primary:`#8b5cf6`,secondary:`#a855f7`,accent:`#ddd6fe`,glow:`rgba(139,92,246,0.25)`,card:`rgba(255,255,255,0.08)`,text:`#ffffff`},blue:{bgStart:`#082f49`,bgMiddle:`#0369a1`,bgEnd:`#0284c7`,primary:`#0ea5e9`,secondary:`#38bdf8`,accent:`#bae6fd`,glow:`rgba(14,165,233,0.25)`,card:`rgba(255,255,255,0.08)`,text:`#ffffff`},sunset:{bgStart:`#431407`,bgMiddle:`#c2410c`,bgEnd:`#ea580c`,primary:`#fb923c`,secondary:`#f97316`,accent:`#fed7aa`,glow:`rgba(249,115,22,0.25)`,card:`rgba(255,255,255,0.08)`,text:`#ffffff`}},ku={name:`Shweta`,author:`Sandeep`,theme:`purple`,dob:`1996-08-02`,wishStart:{day:2,month:7},wishEnd:{day:31,month:8},wish:`Happy Birthday, Didi! ❤️ 
 Thank you for always believing in me, supporting me, and standing by my side through every challenge. Your love, guidance, and encouragement have shaped me into who I am today.
 I wish you endless happiness, good health, success, and a life filled with beautiful moments. May you always keep smiling.
 
-Love you always. ❤️`},Au=`/birthday-pwa/assets/img-CI-NYvBb.webp`,ju=`/birthday-pwa/assets/music-BBQxeYyN.mp3`;function Mu(){let e={...ku,image:Au,music:ju},t=(0,b.useRef)(null),[n,r]=(0,b.useState)(!1),i=Ou[e?.theme]||Ou.purple,{isBirthday:a}=e?te(e):{isBirthday:!1};return(0,b.useEffect)(()=>{if(!i)return;let e=document.documentElement;Object.entries(i).forEach(([t,n])=>{e.style.setProperty(`--${t}`,n)})},[i]),(0,b.useEffect)(()=>{if(e)return t.current=new Audio(e.music),t.current.loop=!0,t.current.volume=.4,()=>{t.current?.pause()}},[e]),e?(0,T.jsxs)(`div`,{className:`relative min-h-screen lg:h-screen overflow-y-auto lg:overflow-hidden flex flex-col text-white`,style:{background:`linear-gradient(135deg,var(--bgStart),var(--bgMiddle),var(--bgEnd))`},children:[(0,T.jsx)(ee,{}),(0,T.jsx)(`main`,{className:`
-                flex-1
-                lg:h-[calc(100vh-56px)]
-                overflow-visible
-                lg:overflow-hidden
-                px-4
-                md:px-8
-            `,children:(0,T.jsxs)(`div`,{className:`
-                    grid
-                    lg:grid-cols-2
-
-                    gap-8
-                    lg:gap-10
-
-                    items-center
-
-                    py-8
-                    lg:py-0
-
-                    h-full
+Love you always. ❤️`},Au=`/birthday-pwa/assets/img-CI-NYvBb.webp`,ju=`/birthday-pwa/assets/music-BBQxeYyN.mp3`;function Mu(){let e=(0,b.useMemo)(()=>({...ku,image:Au,music:ju}),[]),t=(0,b.useRef)(null),[n,r]=(0,b.useState)(!1),i=Ou[e?.theme]||Ou.purple,{isBirthday:a}=e?te(e):{isBirthday:!1};return(0,b.useEffect)(()=>{if(!i)return;let e=document.documentElement;Object.entries(i).forEach(([t,n])=>{e.style.setProperty(`--${t}`,n)})},[i]),(0,b.useEffect)(()=>(t.current=new Audio(ju),t.current.loop=!0,t.current.volume=.4,()=>{t.current?.pause()}),[]),e?(0,T.jsxs)(`div`,{className:`relative min-h-screen lg:h-screen overflow-y-auto lg:overflow-hidden flex flex-col text-white`,style:{background:`linear-gradient(135deg,var(--bgStart),var(--bgMiddle),var(--bgEnd))`},children:[(0,T.jsx)(ee,{}),(0,T.jsx)(`main`,{className:`\r
+                flex-1\r
+                lg:h-[calc(100vh-56px)]\r
+                overflow-visible\r
+                lg:overflow-hidden\r
+                px-4\r
+                md:px-8\r
+            `,children:(0,T.jsxs)(`div`,{className:`\r
+                    grid\r
+                    lg:grid-cols-2\r
+\r
+                    gap-8\r
+                    lg:gap-10\r
+\r
+                    items-center\r
+\r
+                    py-8\r
+                    lg:py-0\r
+\r
+                    h-full\r
                 `,children:[(0,T.jsxs)(`div`,{className:`relative grid justify-items-center items-center h-full`,children:[(0,T.jsx)(Du,{}),(0,T.jsx)(`div`,{style:{background:`var(--glow)`},className:`
                             absolute
                             top-[18%]
@@ -159,94 +159,94 @@ Love you always. ❤️`},Au=`/birthday-pwa/assets/img-CI-NYvBb.webp`,ju=`/birth
                             duration-700
 
                             ${n?`scale-110`:`scale-100`}
-                        `}),(0,T.jsx)(Eu,{show:n})]}),(0,T.jsx)(`div`,{className:`relative z-20 flex justify-center lg:justify-start`,children:(0,T.jsxs)(`div`,{style:{background:`var(--card)`},className:`relative animate-card w-full max-w-xl rounded-3xl border border-white/10 backdrop-blur-xl shadow-2xl p-8 md:p-10 transition-all duration-500`,children:[(0,T.jsx)(`div`,{className:`
-                            absolute
-
-                            inset-0
-
-                            rounded-3xl
-
-                            bg-gradient-to-br
-
-
-                            via-transparent
-
-                            to-transparent
-
-                            pointer-events-none
-                        `,style:{background:`linear-gradient(to bottom right,var(--glow),transparent)`}}),(0,T.jsx)(`h1`,{className:`pb-2 text-4xl md:text-5xl xl:text-6xl font-extrabold bg-gradient-to-r bg-clip-text`,children:a?`Happy Birthday 🤍`:`Compiling... ✨`}),(0,T.jsx)(`h2`,{className:`mt-4 text-3xl md:text-4xl font-bold text-white `,children:e.name}),(0,T.jsx)(`p`,{className:` mt-2`,style:{color:`var(--accent)`},children:a?`It's your special month! 🎉`:`Counting down to your special day ✨`}),(0,T.jsx)(re,{data:e}),(0,T.jsxs)(`button`,{onClick:a?()=>{if(!a)return;r(!0);let e=Date.now()+2500;(function t(){C({particleCount:4,angle:60,spread:70,origin:{x:0}}),C({particleCount:4,angle:120,spread:70,origin:{x:1}}),Date.now()<e&&requestAnimationFrame(t)})(),t.current?.play().catch(()=>{})}:void 0,disabled:!a,className:`
-                                group
-                                relative
-
-                                mt-8
-
-                                overflow-hidden
-
-                                rounded-2xl
-
-                                px-8
-                                py-4
-
-                                font-semibold
-                                text-lg
-
-                                shadow-xl
-
-                                transition-all
-                                duration-300
-
-                                hover:scale-105
-                                hover:shadow-xl
-
-                                active:scale-95
-
-                                disabled:cursor-not-allowed
-                                disabled:opacity-60
-                                disabled:hover:scale-100
-                            `,style:{background:`linear-gradient(90deg,var(--primary),var(--secondary))`,boxShadow:`0 8px 24px var(--glow)`},children:[(0,T.jsx)(`div`,{className:`
-            absolute
-            inset-0
-            rounded-2xl
-            blur-xl
-            opacity-0
-            group-hover:opacity-100
-            transition
-        `,style:{background:`var(--glow)`}}),(0,T.jsx)(`span`,{className:`
-            absolute
-            inset-y-0
-            left-0
-
-            w-16
-
-            bg-white/30
-
-            blur-md
-
-            skew-x-[-20deg]
-
-            animate-shimmer
-        `}),(0,T.jsxs)(`span`,{className:`relative z-10 flex items-center justify-center gap-2`,children:[(0,T.jsx)(`span`,{className:`text-2xl animate-bounce`,children:a?`🎁`:`🔒`}),(0,T.jsx)(`span`,{children:a?`Open Birthday Wish`:`Available on Birthday Month`})]})]})]})})]})}),n&&a&&(0,T.jsx)(`button`,{onClick:()=>{t.current&&(t.current.paused?t.current.play():t.current.pause())},className:`
-            fixed
-            bottom-20
-            right-5
-            z-30
-            h-14
-            w-14
-            rounded-full
-            bg-white/10
-            backdrop-blur-xl
-            text-2xl
-            shadow-xl
-            hover:scale-110
-            transition
-        `,children:`🎵`}),(0,T.jsx)(Tu,{open:n&&a,onClose:()=>{r(!1),t.current?.pause(),t.current.currentTime=0},data:e}),(0,T.jsxs)(`footer`,{className:`
-                h-14
-
-                flex
-                items-center
-                justify-center
-
-                mt-4
-
-                text-sm
+                        `}),(0,T.jsx)(Eu,{show:n})]}),(0,T.jsx)(`div`,{className:`relative z-20 flex justify-center lg:justify-start`,children:(0,T.jsxs)(`div`,{style:{background:`var(--card)`},className:`grid justify-center relative animate-card w-full max-w-xl rounded-3xl border border-white/10 backdrop-blur-xl shadow-2xl p-8 md:p-10 transition-all duration-500`,children:[(0,T.jsx)(`div`,{className:`\r
+                            absolute\r
+\r
+                            inset-0\r
+\r
+                            rounded-3xl\r
+\r
+                            bg-gradient-to-br\r
+\r
+\r
+                            via-transparent\r
+\r
+                            to-transparent\r
+\r
+                            pointer-events-none\r
+                        `,style:{background:`linear-gradient(to bottom right,var(--glow),transparent)`}}),(0,T.jsxs)(`div`,{children:[(0,T.jsx)(`h1`,{className:`pb-2 text-3xl md:text-4xl xl:text-5xl font-extrabold bg-gradient-to-r bg-clip-text`,children:a?`Happy Birthday 🤍`:`Compiling... ✨`}),(0,T.jsx)(`h2`,{className:`mt-4 text-3xl md:text-4xl font-bold text-white `,children:e.name})]}),(0,T.jsx)(`p`,{className:` mt-2`,style:{color:`var(--accent)`},children:a?`It's your special month! 🎉`:`Counting down to your special day ✨`}),(0,T.jsx)(re,{data:e}),(0,T.jsx)(`div`,{className:a?``:`justify-self-center`,children:(0,T.jsxs)(`button`,{onClick:a?()=>{if(!a)return;r(!0);let e=Date.now()+2500;(function t(){C({particleCount:4,angle:60,spread:70,origin:{x:0}}),C({particleCount:4,angle:120,spread:70,origin:{x:1}}),Date.now()<e&&requestAnimationFrame(t)})(),t.current?.play().catch(()=>{})}:void 0,disabled:!a,className:`\r
+                                    group\r
+                                    relative\r
+\r
+                                    mt-8\r
+\r
+                                    overflow-hidden\r
+\r
+                                    rounded-2xl\r
+\r
+                                    px-8\r
+                                    py-4\r
+\r
+                                    font-semibold\r
+                                    text-lg\r
+\r
+                                    shadow-xl\r
+\r
+                                    transition-all\r
+                                    duration-300\r
+\r
+                                    hover:scale-105\r
+                                    hover:shadow-xl\r
+\r
+                                    active:scale-95\r
+\r
+                                    disabled:cursor-not-allowed\r
+                                    disabled:opacity-60\r
+                                    disabled:hover:scale-100\r
+                                `,style:{background:`linear-gradient(90deg,var(--primary),var(--secondary))`,boxShadow:`0 8px 24px var(--glow)`},children:[(0,T.jsx)(`div`,{className:`\r
+                absolute\r
+                inset-0\r
+                rounded-2xl\r
+                blur-xl\r
+                opacity-0\r
+                group-hover:opacity-100\r
+                transition\r
+            `,style:{background:`var(--glow)`}}),(0,T.jsx)(`span`,{className:`\r
+                absolute\r
+                inset-y-0\r
+                left-0\r
+\r
+                w-16\r
+\r
+                bg-white/30\r
+\r
+                blur-md\r
+\r
+                skew-x-[-20deg]\r
+\r
+                animate-shimmer\r
+            `}),(0,T.jsxs)(`span`,{className:`relative z-10 flex items-center justify-center gap-2`,children:[(0,T.jsx)(`span`,{className:`text-2xl animate-bounce`,children:a?`🎁`:`🔒`}),(0,T.jsx)(`span`,{children:a?`Open Birthday Wish`:`Available on Birthday Month`})]})]})})]})})]})}),n&&a&&(0,T.jsx)(`button`,{onClick:()=>{t.current&&(t.current.paused?t.current.play():t.current.pause())},className:`\r
+            fixed\r
+            bottom-20\r
+            right-5\r
+            z-30\r
+            h-14\r
+            w-14\r
+            rounded-full\r
+            bg-white/10\r
+            backdrop-blur-xl\r
+            text-2xl\r
+            shadow-xl\r
+            hover:scale-110\r
+            transition\r
+        `,children:`🎵`}),(0,T.jsx)(Tu,{open:n&&a,onClose:()=>{r(!1),t.current?.pause(),t.current.currentTime=0},data:e}),(0,T.jsxs)(`footer`,{className:`\r
+                h-14\r
+\r
+                flex\r
+                items-center\r
+                justify-center\r
+\r
+                mt-4\r
+\r
+                text-sm\r
             `,children:[`Made with ❤️ by `,e.author]})]}):(0,T.jsx)(`div`,{className:`flex h-screen items-center justify-center text-2xl text-white`,style:{background:`var(--bgStart)`},children:`Loading...`})}var Nu=`modulepreload`,Pu=function(e){return`/birthday-pwa/`+e},Fu={},Iu=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}function s(e){return import.meta.resolve?import.meta.resolve(e):new URL(e,import.meta.url).href}r=o(t.map(t=>{if(t=Pu(t,n),t=s(t),t in Fu)return;Fu[t]=!0;let r=t.endsWith(`.css`);for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}let i=document.createElement(`link`);if(i.rel=r?`stylesheet`:Nu,r||(i.as=`script`),i.crossOrigin=``,i.href=t,a&&i.setAttribute(`nonce`,a),document.head.appendChild(i),r)return new Promise((e,n)=>{i.addEventListener(`load`,e),i.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})},Lu=`true`,Ru=`false`,zu=Lu===`true`,Bu=Ru===`true`;function Vu(e={}){let{immediate:t=!1,onNeedReload:n,onNeedRefresh:r,onOfflineReady:i,onRegistered:a,onRegisteredSW:o,onRegisterError:s}=e,c,l,u,d=async(e=!0)=>{await l,zu||u?.()};async function f(){if(`serviceWorker`in navigator){if(c=await Iu(async()=>{let{Workbox:e}=await import(`./workbox-window.prod.es5-Bd17z0YL.js`);return{Workbox:e}},[]).then(({Workbox:e})=>new e(`/birthday-pwa/sw.js`,{scope:`/birthday-pwa/`,type:`classic`})).catch(e=>{s?.(e)}),!c)return;if(u=()=>{c?.messageSkipWaiting()},!Bu)if(zu)c.addEventListener(`activated`,e=>{(e.isUpdate||e.isExternal)&&(n?n():window.location.reload())}),c.addEventListener(`installed`,e=>{e.isUpdate||i?.()});else{let e=!1,t=()=>{e=!0,c?.addEventListener(`controlling`,e=>{e.isUpdate&&(n?n():window.location.reload())}),r?.()};c.addEventListener(`installed`,n=>{n.isUpdate===void 0?n.isExternal===void 0?!e&&i?.():n.isExternal?t():!e&&i?.():n.isUpdate||i?.()}),c.addEventListener(`waiting`,t)}c.register({immediate:t}).then(e=>{o?o(`/birthday-pwa/sw.js`,e):a?.(e)}).catch(e=>{s?.(e)})}}return l=f(),d}Vu({immediate:!0}),x.createRoot(document.getElementById(`root`)).render((0,T.jsx)(b.StrictMode,{children:(0,T.jsx)(Mu,{})}));
