@@ -2,7 +2,7 @@
 
 A beautiful, customizable Birthday Wishes Progressive Web App (PWA) built with **React + Vite + Tailwind CSS v4 + Framer Motion**.
 
-![Preview](./preview.png)
+![Preview](./preview.jpg)
 
 ---
 
